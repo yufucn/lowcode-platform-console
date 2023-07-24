@@ -1,24 +1,12 @@
 <template>
   <div id="app">
-    <button v-on:click="loginout">退出</button>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  },
-  methods:{
-    loginout:function(){
-      this.$keycloak.logoutFn()
-    }
-  }
+  name: 'App'
 }
 </script>
 
